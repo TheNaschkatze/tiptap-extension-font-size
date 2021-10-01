@@ -2,14 +2,11 @@
   "name": "tiptap-extension-font-size",
   "version": "1.0.0",
   "description": "extension font size for tiptap",
-  "main": "index.ts",
+  "main": "src/index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/TheNaschkatze/tiptap-extension-font-size.git"
-  },
+  "repository": "git+https://github.com/TheNaschkatze/tiptap-extension-font-size.git",
   "author": "theNaschkatze",
   "license": "ISC",
   "bugs": {
