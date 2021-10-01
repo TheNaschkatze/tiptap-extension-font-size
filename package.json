@@ -2,7 +2,7 @@
   "name": "tiptap-extension-font-size",
   "version": "1.0.0",
   "description": "extension font size for tiptap",
-  "main": "index.ts",
+  "main": "src/index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
