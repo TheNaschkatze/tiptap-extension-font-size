@@ -3,6 +3,10 @@
   "version": "1.0.1",
   "description": "extension font size for tiptap",
   "main": "src/index.ts",
+  "keywords": [
+    "tiptap",
+    "tiptap extension"
+  ],
   "scripts": {
     "test": "echo \\\"No test specified\\\""
   },
