@@ -1,6 +1,6 @@
 {
   "name": "tiptap-extension-font-size",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "extension font size for tiptap",
   "main": "src/index.ts",
   "keywords": [
