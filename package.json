@@ -1,24 +1,54 @@
 {
   "name": "tiptap-extension-font-size",
-  "version": "1.1.1",
-  "description": "extension font size for tiptap",
-  "main": "src/index.ts",
+  "author": "theNaschkatze",
+  "description": "font size extension for tiptap",
+  "version": "1.1.2",
+  "homepage": "https://github.com/TheNaschkatze/tiptap-extension-font-size#readme",
   "keywords": [
     "tiptap",
     "tiptap extension"
   ],
-  "scripts": {
-    "test": "echo \\\"No test specified\\\""
-  },
-  "repository": "git+https://github.com/TheNaschkatze/tiptap-extension-font-size.git",
-  "author": "theNaschkatze",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/TheNaschkatze/tiptap-extension-font-size/issues"
+  "engines": {
+    "node": ">=10"
   },
-  "homepage": "https://github.com/TheNaschkatze/tiptap-extension-font-size#readme",
+  "main": "dist/tiptap-extension-font-size.cjs.production.min.js",
+  "umd": "dist/tiptap-extension-font-size.umd.production.min.js",
+  "module": "dist/tiptap-extension-font-size.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build --format cjs,esm,umd",
+    "test": "echo \\\"No test specified\\\"",
+    "lint": "tsdx lint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
   "dependencies": {
     "@tiptap/core": "^2.0.0-beta.116",
     "@tiptap/extension-text-style": "^2.0.0-beta.17"
-  }
+  },
+  "devDependencies": {
+    "husky": "^7.0.4",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.6.4"
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "bugs": {
+    "url": "https://github.com/TheNaschkatze/tiptap-extension-font-size/issues"
+  },
+  "repository": "git+https://github.com/TheNaschkatze/tiptap-extension-font-size.git"
 }
