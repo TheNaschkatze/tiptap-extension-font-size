@@ -23,10 +23,10 @@ declare module '@tiptap/core' {
 export const FontSize = Extension.create<FontSizeOptions>({
   name: 'fontSize',
 
-  addOptions(): FontSizeOptions { 
+  addOptions(): FontSizeOptions {
     return {
       types: ['textStyle'],
-    }
+    };
   },
 
   addGlobalAttributes() {
