@@ -3,6 +3,7 @@ import '@tiptap/extension-text-style';
 
 type FontSizeOptions = {
   types: string[];
+  getStyle: (fontSize: string)=>string
 };
 
 declare module '@tiptap/core' {
@@ -26,6 +27,9 @@ export const FontSize = Extension.create<FontSizeOptions>({
   addOptions(): FontSizeOptions {
     return {
       types: ['textStyle'],
+      getStyle: (fontSize: string)=>{
+        return `font-size: ${fontSize}`
+      }
     };
   },
 
@@ -43,7 +47,7 @@ export const FontSize = Extension.create<FontSizeOptions>({
               }
 
               return {
-                style: `font-size: ${attributes.fontSize}`,
+                style: this.options.getStyle(attributes.fontSize)
               };
             },
           },
